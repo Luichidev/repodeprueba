@@ -1,0 +1,58 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.banner{
+    background-color: yellow;
+    display: flex;
+    height: 200px;
+}
+
+.bannerItem {
+    flex: 1;
+    transition: flex-grow 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerItem:hover{
+    flex-grow: 10;
+}
+
+.bannerItem:hover .bannerLink{
+    transform: rotate(0);
+}
+
+.bannerItem:nth-child(1){
+    background-color: orangered;
+}
+
+.bannerItem:nth-child(2){
+    background-color: green;
+}
+
+.bannerItem:nth-child(3){
+    background-color: rebeccapurple;
+}
+
+.bannerItem:nth-child(4){
+    background-color: palevioletred;
+}
+
+.bannerItem:nth-child(5){
+    background-color: skyblue;
+}
+
+.bannerLink {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2em;
+    transform: rotate(-90deg);
+    transition: transform 0.5s 0.5s;
+}
